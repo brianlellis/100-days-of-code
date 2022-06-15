@@ -11,5 +11,5 @@ I'd venture to say no. Depending on app size/needs/integrations/etc. A decent si
 Again, I'd say no. These scripts are going to range in complexity and may jump several skill levels and pattern complexities in one go. This repo is not meant to teach Python. It's only meant for myself to brush up and as such there's already going to be a lot I already know from working across multiple languages that I'll pull out and just adjust syntactically for Python purposes.
 
 # Where do I get my exercises?
-Anywhere; Udemy, Interviews, Blogs, L33t/HackerRank/GeeksForGeeks, Advent of Code  
+Anywhere; Udemy, Interviews, Blogs, L33t/HackerRank/GeeksForGeeks, Advent of Code, etc.  
 If you can search it on the web or have it heard by another person that's where my exercises come from.
