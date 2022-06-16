@@ -6,7 +6,7 @@ const ImageDetail = props => (
     {/* https://reactnative.dev/docs/images */}
     <Image 
       source={{ uri: props.url }} 
-      style={{ width: 50, height: 50 }}
+      style={{ width: 100, height: 100 }}
     />
     <Text>{props.title}</Text>
   </View>
