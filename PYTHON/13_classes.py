@@ -28,8 +28,8 @@ class Equipment:
     }
 
 class Character(Equipment, Species):
-  def __init__(self, name, species_name, type='Hero'):
-    self.type = type
+  def __init__(self, name, species_name, char_type='Hero'):
+    self.type = char_type
     self.name = name
     Equipment.__init__(self)
     Species.__init__(self, species_name)
