@@ -1937,11 +1937,35 @@ class TowerEval:
       else:
         prog_part['sub_progs'][sub_prog_key] = self.iso_progs[sub_prog_key]
 
+  # WEIGHT BALANCE IS WAY OFF ;/ ... no idea atm
+  def weightBalanceCheck(self, prog_part):
+    iso_map = prog_part['iso_map']
+    wghts   = { iso_map[i]: False for i in range(0, len(iso_map)) }
+    for prog_key in wghts:
+      wghts[prog_key] = self.weightEval(prog_part['sub_progs'][prog_key])
+
+    print(wghts)
+
+
+  def weightEval(self, prog_part, wght=0):
+    wght+=prog_part['wght']
+    # return wght
+    for sub_prog_key in prog_part['sub_progs']:
+      if sub_prog_key in self.big_progs:
+        wght+=prog_part['sub_progs'][sub_prog_key]['wght']
+        self.weightEval(prog_part['sub_progs'][sub_prog_key], wght)
+      else:
+        wght+=(prog_part['sub_progs'][sub_prog_key] * len(prog_part['sub_progs']))
+
+    return wght
+
 
 
 part1 = TowerEval(puzzle_input)
-print(part1.bottom_prog)
-print(part1.big_prog_tree)
+part1.weightBalanceCheck(part1.big_prog_tree)
+# print(part1.bottom_prog)
+# print(part1.big_prog_tree)
+
 # print('===== ISOLATED PROGS =====')
 # print(part1.iso_progs)
 # print('===== BUCKET/BIG PROGS =====')
