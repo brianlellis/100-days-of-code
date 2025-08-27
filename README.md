@@ -15,4 +15,4 @@ Anywhere; Udemy, Interviews, Blogs, L33t/HackerRank/GeeksForGeeks, Advent of Cod
 If you can search it on the web or have it heard by another person that's where my exercises come from.
 
 # Are more languages/frameworks going to be included?
-Most likely, depends on what I need as a personal resource or what I'm in the fancy to code at the time. My public repo is full of other languages and framework solutions so you might find something that fits your needs in here.
+Who knows. I do thi when I have free time. Generally, when I am in implementation I do not have free time.
